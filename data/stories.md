@@ -29,3 +29,15 @@
 ## bot challenge
 * bot_challenge
   - utter_iamabot
+
+## küsimus vpn kohta
+* kysi_vpn_kohta
+	- utter_kysi_vpn_kohta
+
+## küsimus struktuur kohta
+* kysi_ng_struktuuri_kohta
+	- utter_kysi_ng_struktuuri_kohta
+
+## küsimus parkimise kohta
+* kysi_parkimise_kohta
+	- utter_kysi_parkimise_kohta

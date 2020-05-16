@@ -1,56 +1,77 @@
 ## intent:greet
-- hey
-- hello
-- hi
-- good morning
-- good evening
-- hey there
+- [hallo](undefined)
+- [hei](undefined)
+- [tsau](undefined)
+- [tere hommikust](undefined)
+- [tere õhtust](undefined)
+- [tere](undefined)
+- [jou](undefined)
 
 ## intent:goodbye
-- bye
-- goodbye
-- see you around
-- see you later
+- [kõike head](undefined)
+- [head aega](undefined)
+- [kohtume veel](undefined)
+- [näeme hiljem](undefined)
 
 ## intent:affirm
-- yes
-- indeed
-- of course
-- that sounds good
-- correct
+- [jah](undefined)
+- [kindlasti](undefined)
+- [muidugi](undefined)
+- [tundub hea](undefined)
+- [õigus](undefined)
 
 ## intent:deny
-- no
-- never
-- I don't think so
-- don't like that
-- no way
-- not really
+- [ei](undefined)
+- [iialgi](undefined)
+- [ma ei arva nii](undefined)
+- [ei meeldi nii](undefined)
+- [kindlasti mitte](undefined)
+- [mitte väga](undefined)
 
 ## intent:mood_great
-- perfect
-- very good
-- great
-- amazing
-- wonderful
-- I am feeling very good
-- I am great
-- I'm good
+- [perfektne](undefined)
+- [väga hea](undefined)
+- [super](undefined)
+- [suurepärane](undefined)
+- [imeline](undefined)
+- [ma tunnen ennast väga hästi](undefined)
+- [mul on kõik hästi](undefined)
+- [mul läheb hästi](undefined)
 
 ## intent:mood_unhappy
-- sad
-- very sad
-- unhappy
-- bad
-- very bad
-- awful
-- terrible
-- not very good
-- extremely sad
-- so sad
+- [kurb](undefined)
+- [väga kurb](undefined)
+- [õnnetu](undefined)
+- [halb](undefined)
+- [väga halb](undefined)
+- [jube](undefined)
+- [kohutav](undefined)
+- [mitte väga hea](undefined)
+- [ülimalt kahju](undefined)
+- [väga kahju](undefined)
 
 ## intent:bot_challenge
-- are you a bot?
-- are you a human?
-- am I talking to a bot?
-- am I talking to a human?
+- [kas sa oled robot](undefined)?
+- [kas sa oled inimene](undefined)?
+- [kas ma räägin robotiga](undefined)?
+- [kas ma räägin inimesega](undefined)?
+
+## intent:kysi_vpn_kohta
+- Kuidas ma VPN-i sisse lülitan?
+- Kuidas kasutada vpn?
+- ng vpn
+- kuidas töötab vpn
+- vpn
+
+## intent:kysi_parkimise_kohta
+- Kas kontorihoone parklas saadud parkimistrahvi on võimalik tühistada?
+- parkimistrahv
+- parkimine
+
+## intent:kysi_ng_struktuuri_kohta
+- Kust ma leian NG struktuuri?
+- Milline on ng struktuur
+- ng struktuur
+- kuidas näeb välja ng struktuur
+- firma struktuur
+- struktuur
