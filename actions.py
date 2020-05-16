@@ -25,3 +25,18 @@
 #         dispatcher.utter_message(text="Hello World!")
 #
 #         return []
+
+from rasa_sdk.forms import FormAction
+
+
+class PuhkuseForm(FormAction):
+
+    def name(self):
+        return "puhkuse_form"
+
+
+@staticmethod
+def required_slots(tracker):
+    return [
+        "puhkuse_tyyp"
+    ]
