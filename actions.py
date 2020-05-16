@@ -40,3 +40,14 @@ def required_slots(tracker):
     return [
         "puhkuse_tyyp"
     ]
+
+
+def submit(
+    self,
+    dispatcher: CollectingDispatcher,
+    tracker: Tracker,
+    domain: Dict[Text, Any],
+) -> List[Dict]:
+
+    dispatcher.utter_message("Kohe otsin midagi sulle selle kohta")
+    return []

@@ -1,43 +1,55 @@
 ## happy path
-* greet
+
+- greet
   - utter_greet
-* mood_great
+- mood_great
   - utter_happy
 
 ## sad path 1
-* greet
+
+- greet
   - utter_greet
-* mood_unhappy
+- mood_unhappy
   - utter_cheer_up
   - utter_did_that_help
-* affirm
+- affirm
   - utter_happy
 
 ## sad path 2
-* greet
+
+- greet
   - utter_greet
-* mood_unhappy
+- mood_unhappy
   - utter_cheer_up
   - utter_did_that_help
-* deny
+- deny
   - utter_goodbye
 
 ## say goodbye
-* goodbye
+
+- goodbye
   - utter_goodbye
 
 ## bot challenge
-* bot_challenge
+
+- bot_challenge
   - utter_iamabot
 
 ## küsimus vpn kohta
-* kysi_vpn_kohta
-	- utter_kysi_vpn_kohta
+
+- kysi_vpn_kohta - utter_kysi_vpn_kohta
 
 ## küsimus struktuur kohta
-* kysi_ng_struktuuri_kohta
-	- utter_kysi_ng_struktuuri_kohta
+
+- kysi_ng_struktuuri_kohta - utter_kysi_ng_struktuuri_kohta
 
 ## küsimus parkimise kohta
-* kysi_parkimise_kohta
-	- utter_kysi_parkimise_kohta
+
+- kysi_parkimise_kohta - utter_kysi_parkimise_kohta
+
+## puhkuse form
+
+- kysi_puhkuste_kohta
+  - puhkuse_form <!--Run the sales_form action-->
+  - form{"name": "puhkuse_form"} <!--Activate the form-->
+  - form{"name": null}
