@@ -1,32 +1,46 @@
-intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
-
-responses:
-  utter_greet:
-  - text: "Hey! How are you?"
-
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
-
-  utter_goodbye:
-  - text: "Bye"
-
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
-
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- kysi_parkimise_kohta
+- kysi_vpn_kohta
+- kysi_ng_struktuuri_kohta
+entities:
+- undefined
+responses:
+  utter_greet:
+  - text: Tere! Kuidas sul läheb?
+  utter_cheer_up:
+  - text: 'Siin on midagi mis teeb su tuju heaks:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+  - text: Kas see aitas sind?
+  utter_happy:
+  - text: Tore!
+  utter_goodbye:
+  - text: Head aega
+  utter_iamabot:
+  - text: Mina olen Rasa robot.
+  utter_kysi_vpn_kohta:
+  - text: 'NG VPN kohta leiad infot siit: [NG VPN](http://nemo.netgroupdigital.com/Personali%20dokumendid/Net%20Group%20struktuur%202020.pptx)'
+  utter_kysi_ng_struktuuri_kohta:
+  - text: 'NG struktuuri kohta leiad infot siit: [NG struktuur](http://nemo.netgroupdigital.com/Personali%20dokumendid/Net%20Group%20struktuur%202020.pptx)'
+  utter_kysi_parkimise_kohta:
+  - text: Parkimise kohta mul praegu head infot sulle adna pole
+actions:
+- utter_greet
+- utter_cheer_up
+- utter_did_that_help
+- utter_happy
+- utter_goodbye
+- utter_iamabot
+- utter_kysi_vpn_kohta
+- utter_kysi_ng_struktuuri_kohta
+- utter_kysi_parkimise_kohta
