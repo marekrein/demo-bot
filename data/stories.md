@@ -37,19 +37,27 @@
 
 ## küsimus vpn kohta
 
-- kysi_vpn_kohta - utter_kysi_vpn_kohta
+- kysi_vpn_kohta
+  - utter_kysi_vpn_kohta
 
 ## küsimus struktuur kohta
 
-- kysi_ng_struktuuri_kohta - utter_kysi_ng_struktuuri_kohta
+- kysi_ng_struktuuri_kohta
+  - utter_kysi_ng_struktuuri_kohta
 
 ## küsimus parkimise kohta
 
-- kysi_parkimise_kohta - utter_kysi_parkimise_kohta
+- kysi_parkimise_kohta
+  - utter_kysi_parkimise_kohta
+
+## küsimus kuluaruande kohta
+
+- kysi_kuluaruande_infot
+  - utter_kysi_kuluaruande_infot
 
 ## puhkuse form
 
 - kysi_puhkuste_kohta
-  - puhkuse_form <!--Run the sales_form action-->
-  - form{"name": "puhkuse_form"} <!--Activate the form-->
+  - puhkuse_form
+  - form{"name": "puhkuse_form"}
   - form{"name": null}

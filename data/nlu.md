@@ -80,7 +80,7 @@
 ## intent:kysi_ng_struktuuri_kohta
 
 - Kust ma leian NG struktuuri?
-- Milline on ng struktuur
+- Milline on ng struktuur?
 - ng struktuur
 - kuidas näeb välja ng struktuur
 - firma struktuur
@@ -99,3 +99,7 @@
 - [õppepuhkus](puhkuse_tyyp)
 - [lapsepuhkus](puhkuse_tyyp)
 - [palgata puhkus](puhkuse_tyyp)
+
+## intent:kysi_kuluaruande_infot
+
+- [kuluaruanne](kuluaruanne)

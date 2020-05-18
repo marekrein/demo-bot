@@ -14,8 +14,11 @@ intents:
   - kysi_ng_struktuuri_kohta
   - kysi_puhkuste_kohta
   - kasutaja_annab_infot
+  - kysi_kuluaruande_infot
 entities:
   - puhkuse_tyyp
+  - vpn
+  - kuluaruanne
 slots:
   puhkuse_tyyp:
     type: unfeaturized
@@ -41,6 +44,8 @@ responses:
     - text: Parkimise kohta mul praegu head infot sulle adna pole
   utter_kysi_puhkuse_tyyp:
     - text: Mis puhkusetüüp sind huvitab?
+  utter_kysi_kuluaruande_infot:
+    - text: "Kuluaruande kohta leiad infot siit:[NG struktuur](http://nemo.netgroupdigital.com/finants/Documents/Kuludokumentide%20%C3%BCleslaadimine%20ja%20kinnitamine_2019.docx)"
 actions:
   - utter_greet
   - utter_cheer_up
@@ -51,5 +56,6 @@ actions:
   - utter_kysi_vpn_kohta
   - utter_kysi_ng_struktuuri_kohta
   - utter_kysi_parkimise_kohta
+  - utter_kysi_kuluaruande_infot
 forms:
   - puhkuse_form
