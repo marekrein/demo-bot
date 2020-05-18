@@ -2,60 +2,75 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
-  - kysi_parkimise_kohta
-  - kysi_vpn_kohta
-  - kysi_ng_struktuuri_kohta
-  - kysi_puhkuste_kohta
-  - kasutaja_annab_infot
-  - kysi_kuluaruande_infot
+- kysi_puhkuse_infot
+- greet
+- goodbye
+- affirm
+- deny
+- thanks
+- mood_great
+- mood_unhappy
+- bot_challenge
+- kysi_parkimise_kohta
+- kysi_vpn_kohta
+- kysi_ng_struktuuri_kohta
+- kysi_puhkuste_kohta
+- kasutaja_annab_infot
+- kysi_kuluaruande_infot
+- kysi_õppepuhkuse_infot
+- kysi_põhipuhkuse_infot
 entities:
-  - puhkuse_tyyp
-  - vpn
-  - kuluaruanne
+- puhkuse_tyyp
+- vpn
+- kuluaruanne
+- undefined
 slots:
   puhkuse_tyyp:
     type: unfeaturized
 responses:
   utter_greet:
-    - text: Tere! Kuidas sul läheb?
+  - text: Tere! Kuidas sul läheb? Kuidas saan sind aidata?
   utter_cheer_up:
-    - text: "Siin on midagi mis teeb su tuju heaks:"
-      image: https://i.imgur.com/nGF1K8f.jpg
+  - text: 'Siin on midagi mis teeb su tuju heaks:'
+    image: https://i.imgur.com/nGF1K8f.jpg
   utter_did_that_help:
-    - text: Kas see aitas sind?
+  - text: Kas see aitas sind? Aita mind ja küsi sama asja teistmoodi.
   utter_happy:
-    - text: Tore!
+  - text: Tore!
   utter_goodbye:
-    - text: Head aega
+  - text: Head aega. Näeme jälle!
   utter_iamabot:
-    - text: Mina olen Rasa robot.
+  - text: Mina olen Rasa robot.
   utter_kysi_vpn_kohta:
-    - text: "NG VPN kohta leiad infot siit: [NG VPN](http://nemo.netgroupdigital.com/Personali%20dokumendid/Net%20Group%20struktuur%202020.pptx)"
+  - text: 'NG VPN kohta leiad infot siit: [NG VPN]("siin peaks mingi viide olema")'
   utter_kysi_ng_struktuuri_kohta:
-    - text: "NG struktuuri kohta leiad infot siit: [NG struktuur](http://nemo.netgroupdigital.com/Personali%20dokumendid/Net%20Group%20struktuur%202020.pptx)"
+  - text: 'NG struktuuri kohta leiad infot siit: [NG struktuur](http://nemo.netgroupdigital.com/Personali%20dokumendid/Net%20Group%20struktuur%202020.pptx)'
   utter_kysi_parkimise_kohta:
-    - text: Parkimise kohta mul praegu head infot sulle adna pole
-  utter_kysi_puhkuse_tyyp:
-    - text: Mis puhkusetüüp sind huvitab?
+  - text: Parkimise kohta mul praegu head infot sulle anda pole. Ole hea ja pargi
+      korralikult!
+  utter_kysi_puhkuste_kohta:
+  - text: Mis puhkusetüüp sind huvitab?
   utter_kysi_kuluaruande_infot:
-    - text: "Kuluaruande kohta leiad infot siit:[NG struktuur](http://nemo.netgroupdigital.com/finants/Documents/Kuludokumentide%20%C3%BCleslaadimine%20ja%20kinnitamine_2019.docx)"
+  - text: Kuluaruande kohta leiad infot siit:[kuluaruande info](http://nemo.netgroupdigital.com/finants/Documents/Kuludokumentide%20%C3%BCleslaadimine%20ja%20kinnitamine_2019.docx)
+  utter_kysi_põhipuhkuse_infot:
+  - text: 'Põhipuhkuse kohta saada infot: [mingi viide siin]()'
+  utter_kysi_õppepuhkuse_infot:
+  - text: 'Õppepuhkuse kohta saada infot: [mingi viide siin]()'
+  utter_thanks:
+  - text: Ole lahke.
 actions:
-  - utter_greet
-  - utter_cheer_up
-  - utter_did_that_help
-  - utter_happy
-  - utter_goodbye
-  - utter_iamabot
-  - utter_kysi_vpn_kohta
-  - utter_kysi_ng_struktuuri_kohta
-  - utter_kysi_parkimise_kohta
-  - utter_kysi_kuluaruande_infot
-forms:
-  - puhkuse_form
+- utter_greet
+- utter_cheer_up
+- utter_did_that_help
+- utter_happy
+- utter_thanks
+- utter_goodbye
+- utter_iamabot
+- utter_kysi_vpn_kohta
+- utter_kysi_ng_struktuuri_kohta
+- utter_kysi_parkimise_kohta
+- utter_kysi_kuluaruande_infot
+- utter_kysi_puhkuse_tyyp
+- utter_kysi_õppepuhkuse_infot
+- utter_kysi_põhipuhkuse_infot
+- utter_kysi_puhkuste_kohta
