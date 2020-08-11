@@ -73,3 +73,18 @@
 
 * thanks
 	- utter_thanks
+
+## küsimus põhipuhkuse kohta VOL 2
+
+* kysi_puhkuste_kohta{"puhkuse_tyyp":"põhipuhkus"}
+    - slot{"puhkuse_tyyp":"põhipuhkus"}
+    - utter_kysi_põhipuhkuse_infot
+
+## Kus näen haiguslehte
+* kysi_haiguslehte
+	- utter_kysi_haiguslehte
+
+## Are you bot
+
+* bot_challenge
+  - utter_imabot

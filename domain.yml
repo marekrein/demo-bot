@@ -19,11 +19,13 @@ intents:
 - kysi_kuluaruande_infot
 - kysi_õppepuhkuse_infot
 - kysi_põhipuhkuse_infot
+- kysi_haiguslehte
 entities:
 - puhkuse_tyyp
 - vpn
 - kuluaruanne
 - undefined
+- puhkus
 slots:
   puhkuse_tyyp:
     type: unfeaturized
@@ -41,6 +43,7 @@ responses:
   - text: Head aega. Näeme jälle!
   utter_iamabot:
   - text: Mina olen Rasa robot.
+  - text: See on keeruline, aga ma ei ole algoritm.
   utter_kysi_vpn_kohta:
   - text: 'NG VPN kohta leiad infot siit: [NG VPN]("siin peaks mingi viide olema")'
   utter_kysi_ng_struktuuri_kohta:
@@ -58,6 +61,9 @@ responses:
   - text: 'Õppepuhkuse kohta saada infot: [mingi viide siin]()'
   utter_thanks:
   - text: Ole lahke.
+  utter_kysi_haiguslehte:
+  - text: Haiguslehte saab vaadata riigiportaalis e-teenuses Isiku töövõimetushüvitised.
+      Vaata täpsemalt [siit.](https://www.eesti.ee/et/elusuendmused/jaein-haigeks/#kus-ma-naeen-oma-haiguslehte)
 actions:
 - utter_greet
 - utter_cheer_up
@@ -74,3 +80,4 @@ actions:
 - utter_kysi_õppepuhkuse_infot
 - utter_kysi_põhipuhkuse_infot
 - utter_kysi_puhkuste_kohta
+- utter_kysi_haiguslehte
